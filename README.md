@@ -13,7 +13,7 @@ The challenge I faced in this project was being aware of my syntax errors in my 
 
 Website Mock Up
 
-
+![password-generator](https://user-images.githubusercontent.com/91860335/141197772-7adeaaeb-d6c1-495f-99ba-d8c26b129697.png)
 
 Website Link
 
