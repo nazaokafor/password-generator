@@ -1,36 +1,10 @@
 // *Assignment Code
 var generateBtn = document.querySelector("#generate");
-
-var clickTheButton = true;
-if (generateBtn === clickTheButton) {
-  prompt("Create a new password (Y/N)?");
-
-// function openingMessage() {
-// prompt('Create a new password?');
-// }
-
-// openingMessage(generateBtn);
-
-// function openingMessage() {
-  // prompt('Create a new password (Y/N)?');
-// }
-
-// *WHEN I click the button to generate a password
-
-// function clickButton() {
-// var createPassword = window.prompt("Create a new password."); clickButton(createPassword);
-// return;
-// }
-
-
-// *THEN I am presented with a series of prompts for password criteria
-
-// var criteria = ["Password Length", "Character Type"];
-
-// var generatePassword = function () {
-  //  = window.prompt("Enter Password Length or Character Type");
-// }
-
+var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var numeric = '0123456789'
+var specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+// var clickTheButton = true;
 
 // *Write password to the #password input
 function writePassword() {
@@ -41,6 +15,27 @@ function writePassword() {
 
 
 }
+
+function generatePassword() {
+  // WHEN prompted for the length of the password
+// THEN I choose a length of at least 8 characters and no more than 128 characters
+ var passwordLength = parseInt(prompt('Choose the length of your password (at least 8 characters and no more than 128 characters).'))
+ console.log(passwordLength);
+ if (passwordLength < 8 || passwordLength > 128) {
+   alert('Enter a valid password length of at least 8 characters and no more than 128 characters.');
+   return
+ }
+}
+
+
+// WHEN asked for character types to include in the password
+// THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+// WHEN I answer each prompt
+// THEN my input should be validated and at least one character type should be selected
+// WHEN all prompts are answered
+// THEN a password is generated that matches the selected criteria
+// WHEN the password is generated
+// THEN the password is either displayed in an alert or written to the page
 
 //*Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
