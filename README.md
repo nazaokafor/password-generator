@@ -1,92 +1,20 @@
-# 03 JavaScript: Password Generator
+Password Generator
 
-## Your Task
+In the world of tech, the privacy of sensitive information is crucial for users and developers alike. A secure access to such information can ensure the safety of a user's identity as well as the identity of corporations. 
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+For this project, a starter code in Javascript was manipulated to create a random password generator. The features of this generator meets certain criteria for a secure password that allows a user to:
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+1. Pick the length of their password.
+2. Choose the type of criteria they would like to have in their password. 
 
-## User Story
+As I was working on this project, I learned that organizing my variables in Javascript on the global and local scope made the execution of my functions a lot neater. I also learned that logging my functions onto the console was a great way to check the functionality of my "if" statements. 
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+The challenge I faced in this project was being aware of my syntax errors in my variables and punctuations, since they affected my function execution. The console on my browser was useful in helping locate these errors. Additionally, I had to modify one of my global variables to ensure that the numeric criteria was met since the generated password did not include them sometimes. Overall, I think this project was an interesting practice for my Javascript skills for functions. 
 
-## Acceptance Criteria
+Website Mock Up
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
 
-## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+Website Link
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+https://nazaokafor.github.io/password-generator/
