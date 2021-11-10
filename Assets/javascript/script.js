@@ -17,6 +17,8 @@ function writePassword() {
 }
 
 function generatePassword() {
+  var userOptions = ''
+  var tempPassword = ''
   // WHEN prompted for the length of the password
 // THEN I choose a length of at least 8 characters and no more than 128 characters
  var passwordLength = parseInt(prompt('Choose the length of your password (at least 8 characters and no more than 128 characters).'))
@@ -25,11 +27,30 @@ function generatePassword() {
    alert('Enter a valid password length of at least 8 characters and no more than 128 characters.');
    return
  }
+ // WHEN asked for character types to include in the password
+// THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+ var isLowerCase = confirm('Would you like to add lowercase characters?');
+ var isUpperCase = confirm('Would you like to add uppercase characters?');
+ var isNumeric = confirm('Would you like to add numeric characters?');
+ var isSpecialCharacters = confirm('Would you like to add special characters?');
+ if (isLowerCase) {
+   userOptions = userOptions + lowerCase 
+ }
+ if (isUpperCase) {
+   userOptions = userOptions + upperCase
+ }
+ if (isNumeric) {
+   userOptions = userOptions + numeric
+ }
+ if (isSpecialCharacters) {
+   userOptions = userOptions + specicalCharacters
+ }
 }
 
 
-// WHEN asked for character types to include in the password
-// THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+
+
+
 // WHEN I answer each prompt
 // THEN my input should be validated and at least one character type should be selected
 // WHEN all prompts are answered
